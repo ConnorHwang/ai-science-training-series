@@ -234,7 +234,7 @@ def train_epoch(i_epoch, step_in_epoch, train_ds, val_ds, network, optimizer, BA
         loss, acc = training_step(network, optimizer, train_images, train_labels)
         end = time.time()
         images_per_second = BATCH_SIZE / (end - start)
-        print(f"Finished step {step_in_epoch.numpy()} of {steps_per_epoch} in epoch {i_epoch.numpy()},loss={loss:.3f}, acc={acc:.3f} ({images_per_second:.3f} img/s).")
+        print(f"Finished step {step_in_epoch.numpy():5d} of {steps_per_epoch:5d} in epoch {i_epoch.numpy():5d}, loss={loss:8.3f}, acc={acc:8.3f} ({images_per_second:8.3f} img/s).")
         start = time.time()
 
     # Save the network after every epoch:
