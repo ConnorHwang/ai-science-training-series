@@ -30,14 +30,11 @@
 # echo Working directory is $PBS_O_WORKDIR
 # cd $PBS_O_WORKDIR
 #
-#
 # ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 # ┃ NOTE: Recommended for running this file    ┃
 # ┃--------------------------------------------┃ 
-# ┃$ TSTAMP=$(date "+%Y-%m-%d-%H%M%S");        ┃
-# ┃$ LOGFILE="logs/${TSTAMP}.log"              ┃
-# ┃$ ./main.sh $@ > $LOGFILE 2>&1 &            ┃
-# ┃$ tail -1 $LOGFILE $(tail -1 logs/latest)   ┃
+# ┃$ ./main.sh $@ > main.log 2>&1 &            ┃
+# ┃$ tail -f main.log $(tail -1 logs/latest)   ┃
 # ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 TSTAMP=$(date "+%Y-%m-%d-%H%M%S")
