@@ -1,0 +1,74 @@
+Job ID: 
+Job started at: 2022-11-07-135051
+DIR:/home/hanul/ai-science-training-series/07_largeScaleTraining/src/ai4sci
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  Job started at: 2022-11-07-135051 on thetagpu04           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+environment: line 5: __conda_exe: command not found
+Creating new venv at: /home/hanul/ai-science-training-series/07_largeScaleTraining/venvs/thetaGPU/2022-07-01
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pip in /lus/theta-fs0/software/thetagpu/conda/2022-07-01/mconda3/lib/python3.8/site-packages (22.3)
+Collecting pip
+  Downloading pip-22.3.1-py3-none-any.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 77.1 MB/s eta 0:00:00
+Installing collected packages: pip
+  WARNING: The scripts pip, pip3, pip3.10 and pip3.8 are installed in '/home/hanul/.local/conda/2022-07-01/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed pip-22.3.1
+
+[notice] A new release of pip available: 22.3 -> 22.3.1
+[notice] To update, run: pip install --upgrade pip
+./main.sh: line 139: /home/hanul/ai-science-training-series/07_largeScaleTraining/venvs/thetaGPU/2022-07-01/bin/activate: No such file or directory
+Defaulting to user installation because normal site-packages is not writeable
+Obtaining file:///home/hanul/ai-science-training-series/07_largeScaleTraining
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: ai4sci
+  Building editable for ai4sci (pyproject.toml): started
+  Building editable for ai4sci (pyproject.toml): finished with status 'done'
+  Created wheel for ai4sci: filename=ai4sci-0.0.0-0.editable-py3-none-any.whl size=1164 sha256=cdc50ad65ed7799b46d9a9762ba59e392f0e6d62151f22bc3c7cac7acab3a455
+  Stored in directory: /tmp/pip-ephem-wheel-cache-3tk_utj_/wheels/95/8b/db/ece1bd072ba5fc8376fad631997a22c1f67584e6426a8f39a6
+Successfully built ai4sci
+Installing collected packages: ai4sci
+Successfully installed ai4sci-0.0.0
+WIDTH: 
+DIR=/home/hanul/ai-science-training-series/07_largeScaleTraining/src/ai4sci
+MAIN=/home/hanul/ai-science-training-series/07_largeScaleTraining/src/ai4sci/main.py
+PARENT=/home/hanul/ai-science-training-series/07_largeScaleTraining/src
+ROOT=/home/hanul/ai-science-training-series/07_largeScaleTraining
+LOGDIR=/home/hanul/ai-science-training-series/07_largeScaleTraining/src/ai4sci/logs
+LOGFILE=/home/hanul/ai-science-training-series/07_largeScaleTraining/src/ai4sci/logs/2022-11-07-135051-thetagpu04_ngpu8_ncpu256.log
+IBV_FORK_SAFE=
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  STARTING A NEW RUN ON 8 GPUs 256  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┃  - DATE: 2022-11-07-135051
+┃  - NCPUS: 256
+┃  - NRANKS: 1
+┃  - NGPUS PER RANK: 8
+┃  - NGPUS TOTAL: 8
+┃  - MAIN: /home/hanul/ai-science-training-series/07_largeScaleTraining/src/ai4sci/main.py
+┃  - Writing logs to /home/hanul/ai-science-training-series/07_largeScaleTraining/src/ai4sci/logs/2022-11-07-135051-thetagpu04_ngpu8_ncpu256.log
+┃  - python3: /lus/theta-fs0/software/thetagpu/conda/2022-07-01/mconda3/bin/python3
+┃  - mpirun: /lus/theta-fs0/software/thetagpu/openmpi/openmpi-4.1.4_ucx-1.12.1_gcc-9.4.0/bin/mpirun
+┃  - ai4sci: /home/hanul/ai-science-training-series/07_largeScaleTraining/src/ai4sci/__init__.py
+┃  - exec: /lus/theta-fs0/software/thetagpu/openmpi/openmpi-4.1.4_ucx-1.12.1_gcc-9.4.0/bin/mpirun --verbose     -n 8     --hostfile /var/tmp/cobalt.10113262     -npernode 8     -x PYTHONUSERBASE     -x PYTHONSTARTUP     -x http_proxy     -x https_proxy     -x PATH     -x LD_LIBRARY_PATH /lus/theta-fs0/software/thetagpu/conda/2022-07-01/mconda3/bin/python3 /home/hanul/ai-science-training-series/07_largeScaleTraining/src/ai4sci/main.py batch_size=512
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+2022-11-07 13:52:45.490492: W tensorflow/core/grappler/costs/op_level_cost_estimator.cc:690] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_UINT8 } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_UINT8 shape { dim { size: 1 } dim { size: -5 } dim { size: -6 } dim { size: 3 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "AuthenticAMD" model: "241" frequency: 2245 num_cores: 32 environment { key: "cpu_instruction_set" value: "SSE, SSE2, SSE3" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 32768 l2_cache_size: 524288 l3_cache_size: 268435456 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -10 } dim { size: -11 } dim { size: 3 } } }
+2022-11-07 13:52:45.490490: W tensorflow/core/grappler/costs/op_level_cost_estimator.cc:690] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_UINT8 } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_UINT8 shape { dim { size: 1 } dim { size: -5 } dim { size: -6 } dim { size: 3 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "AuthenticAMD" model: "241" frequency: 2245 num_cores: 32 environment { key: "cpu_instruction_set" value: "SSE, SSE2, SSE3" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 32768 l2_cache_size: 524288 l3_cache_size: 268435456 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -10 } dim { size: -11 } dim { size: 3 } } }
+2022-11-07 13:52:45.490493: W tensorflow/core/grappler/costs/op_level_cost_estimator.cc:690] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_UINT8 } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_UINT8 shape { dim { size: 1 } dim { size: -5 } dim { size: -6 } dim { size: 3 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "AuthenticAMD" model: "241" frequency: 2245 num_cores: 32 environment { key: "cpu_instruction_set" value: "SSE, SSE2, SSE3" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 32768 l2_cache_size: 524288 l3_cache_size: 268435456 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -10 } dim { size: -11 } dim { size: 3 } } }
+2022-11-07 13:52:45.490514: W tensorflow/core/grappler/costs/op_level_cost_estimator.cc:690] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_UINT8 } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_UINT8 shape { dim { size: 1 } dim { size: -5 } dim { size: -6 } dim { size: 3 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "AuthenticAMD" model: "241" frequency: 2245 num_cores: 32 environment { key: "cpu_instruction_set" value: "SSE, SSE2, SSE3" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 32768 l2_cache_size: 524288 l3_cache_size: 268435456 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -10 } dim { size: -11 } dim { size: 3 } } }
+2022-11-07 13:52:45.490490: W tensorflow/core/grappler/costs/op_level_cost_estimator.cc:690] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_UINT8 } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_UINT8 shape { dim { size: 1 } dim { size: -5 } dim { size: -6 } dim { size: 3 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "AuthenticAMD" model: "241" frequency: 2245 num_cores: 32 environment { key: "cpu_instruction_set" value: "SSE, SSE2, SSE3" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 32768 l2_cache_size: 524288 l3_cache_size: 268435456 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -10 } dim { size: -11 } dim { size: 3 } } }
+2022-11-07 13:52:45.490527: W tensorflow/core/grappler/costs/op_level_cost_estimator.cc:690] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_UINT8 } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_UINT8 shape { dim { size: 1 } dim { size: -5 } dim { size: -6 } dim { size: 3 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "AuthenticAMD" model: "241" frequency: 2245 num_cores: 32 environment { key: "cpu_instruction_set" value: "SSE, SSE2, SSE3" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 32768 l2_cache_size: 524288 l3_cache_size: 268435456 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -10 } dim { size: -11 } dim { size: 3 } } }
+2022-11-07 13:52:45.490494: W tensorflow/core/grappler/costs/op_level_cost_estimator.cc:690] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_UINT8 } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_UINT8 shape { dim { size: 1 } dim { size: -5 } dim { size: -6 } dim { size: 3 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "AuthenticAMD" model: "241" frequency: 2245 num_cores: 32 environment { key: "cpu_instruction_set" value: "SSE, SSE2, SSE3" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 32768 l2_cache_size: 524288 l3_cache_size: 268435456 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -10 } dim { size: -11 } dim { size: 3 } } }
+2022-11-07 13:52:45.490528: W tensorflow/core/grappler/costs/op_level_cost_estimator.cc:690] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_UINT8 } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_UINT8 shape { dim { size: 1 } dim { size: -5 } dim { size: -6 } dim { size: 3 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "AuthenticAMD" model: "241" frequency: 2245 num_cores: 32 environment { key: "cpu_instruction_set" value: "SSE, SSE2, SSE3" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 32768 l2_cache_size: 524288 l3_cache_size: 268435456 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -10 } dim { size: -11 } dim { size: 3 } } }
+2022-11-07 13:58:22.265213: W tensorflow/core/grappler/costs/op_level_cost_estimator.cc:690] Error in PredictCost() for the op: op: "CropAndResize" attr { key: "T" value { type: DT_UINT8 } } attr { key: "extrapolation_value" value { f: 0 } } attr { key: "method" value { s: "bilinear" } } inputs { dtype: DT_UINT8 shape { dim { size: 1 } dim { size: -5 } dim { size: -6 } dim { size: 3 } } } inputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: 4 } } } inputs { dtype: DT_INT32 shape { dim { size: -2 } } } inputs { dtype: DT_INT32 shape { dim { size: 2 } } } device { type: "CPU" vendor: "AuthenticAMD" model: "241" frequency: 2245 num_cores: 32 environment { key: "cpu_instruction_set" value: "SSE, SSE2, SSE3" } environment { key: "eigen" value: "3.4.90" } l1_cache_size: 32768 l2_cache_size: 524288 l3_cache_size: 268435456 memory_size: 268435456 } outputs { dtype: DT_FLOAT shape { dim { size: -2 } dim { size: -10 } dim { size: -11 } dim { size: 3 } } }
